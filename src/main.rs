@@ -8,6 +8,11 @@ struct User {
     pub intelligence: i32,
 }
 
+struct Task {
+    pub name:String,
+    
+}
+
 fn main() {
     let intelligence = 0;
     let health = 0;
