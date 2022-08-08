@@ -1,6 +1,7 @@
 use std::fs;
 use std::env;
 use std::collections::HashMap;
+use std::dbg;
 
 pub struct User {
     pub user_name: String,
@@ -13,19 +14,19 @@ pub struct User {
 // }
 
 impl User {
-    fn init_user(name: String, stats: HashMap<String, i32>) -> User {
+    pub fn init_user(name: String, stats: HashMap<String, i32>) -> User {
         return User {user_name: name.to_string(), stats: stats};
     }
 
-    fn add_stat(& mut self, name:String, val:i32){
+    pub fn add_stat(& mut self, name:String, val:i32){
         self.stats.insert(name, val);
     }
 
-    fn remove_stat(& mut self, name: String){
+    pub fn remove_stat(& mut self, name: String){
         self.stats.remove(&name);
     }
 
-    fn update_stat(& mut self, name:String, val:i32){
+    pub fn update_stat(& mut self, name:String, val:i32){
         *self.stats.get_mut(&name).unwrap() = val;
     }
 }

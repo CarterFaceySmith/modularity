@@ -1,24 +1,18 @@
-use std::env;
-
-// use shitStatTracker::User;
-
-struct User {
-    pub charisma: i32,
-    pub health: i32,
-    pub intelligence: i32,
-}
-
-struct Task {
-    pub name:String,
-    
-}
+use std::{env, io, collections::HashMap};
+use shitStatTracker::User;
 
 fn main() {
-    let intelligence = 0;
-    let health = 0;
-    let charisma = 0;
-    let carter = User { charisma, health, intelligence};
+    println!("Input your name: \n>");
+    let mut name: String<::new();
+    io::stdin().read_line(&mut name);
+    let mut user = User::init_user(name, HashMap::new());
 
-    println!("{:?}", carter.health);
+    println!("Input the names of the stats to track, or 0 to continue: \n>");
+    let mut stat: String::new();
+    io::stdin().read_line(&mut stat).expect("Failed to get console input");
+    user.add_stat(stat, 0);
+    
+
+    println!("{}", user.user_name);
 
 }
