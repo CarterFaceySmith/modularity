@@ -11,8 +11,8 @@ DONE    - Can create and remove 'STATs'
     - Completion of a TASK can increase or decrease a STAT
     - Can be created and removed by the USER
 - STAT (Field of USER)
-    - Can be added and removed by the USER
-    - Can increase or decrease via a STAT
+DONE    - Can be added and removed by the USER
+    - Can increase or decrease via a TASK
 
 ## TODO
 - x
