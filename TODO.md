@@ -3,7 +3,7 @@
 ## Program Structure
 - USER (Struct)
     - Persists through inits via local storage
-    - Can create and remove 'STATs'
+DONE    - Can create and remove 'STATs'
     - Can create TASKs
     - Cannot be removed and is only initialised once
 - TASK (Struct)
